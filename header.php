@@ -173,9 +173,21 @@
 
                                 <li>
                                     <div class="parent-menu-cont">
-                                        <a href="./program_page.php" class="parent-menu-item"
+                                        <a href="#" class="parent-menu-item"
                                             style="border-left: 1px solid #251F75">
                                             <span>Program</span>
+                                        </a>
+
+                                    </div>
+                                    <div class="child-menu-cont">
+                                        <a href="./regular_training_program.php" class="child-menu-item">
+                                            <span>Regular Training Program</span>
+                                        </a>
+                                        <a href="./proposed_training_program.php" class="child-menu-item">
+                                            <span>Proposed Training Program</span>
+                                        </a>
+                                        <a href="./scholarly_program.php" class="child-menu-item">
+                                            <span>Scholarly Program</span>
                                         </a>
 
                                     </div>
@@ -197,13 +209,41 @@
                                         <a href="./video_gallery_page.php" class="child-menu-item">
                                             <span>Video</span>
                                         </a>
-                                                                            <a href="./video_gallery_page.php" class="child-menu-item">
-                                                                                <span>Video</span>
-                                                                            </a>
-                                        
+              
+
 
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="parent-menu-cont">
+                                        <a href="./ornarigram_page.php" class="parent-menu-item">
+                                            <span>Organigram</span>
+                                        </a>
+                                
+                                    </div>
+                                
+           
+                                </li>
+<li>
+    <div class="parent-menu-cont">
+        <a href="./aminities_page.php" class="parent-menu-item">
+            <span>Aminities</span>
+        </a>
+
+    </div>
+
+    <div class="child-menu-cont">
+        <a href="./image_gallery_page.php" class="child-menu-item">
+            <span>Image</span>
+        </a>
+        <a href="./video_gallery_page.php" class="child-menu-item">
+            <span>Video</span>
+        </a>
+
+    </div>
+</li>
+
+
 
                                 <li>
                                     <div class="parent-menu-cont">
@@ -222,60 +262,8 @@
                                     </div>
 
                                 </li>
-                                <li>
-                                    <div class="parent-menu-cont">
-                                        <a class="parent-menu-item">
-                                            <span>Gallery</span>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="child-menu-cont">
-                                        <a href="./image_gallery_page.php" class="child-menu-item">
-                                            <span>Image</span>
-                                        </a>
-                                        <a href="./video_gallery_page.php" class="child-menu-item">
-                                            <span>Video</span>
-                                        </a>
-
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="parent-menu-cont">
-                                        <a class="parent-menu-item">
-                                            <span>Gallery</span>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="child-menu-cont">
-                                        <a href="./image_gallery_page.php" class="child-menu-item">
-                                            <span>Image</span>
-                                        </a>
-                                        <a href="./video_gallery_page.php" class="child-menu-item">
-                                            <span>Video</span>
-                                        </a>
-
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="parent-menu-cont">
-                                        <a class="parent-menu-item">
-                                            <span>Gallery</span>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="child-menu-cont">
-                                        <a href="./image_gallery_page.php" class="child-menu-item">
-                                            <span>Image</span>
-                                        </a>
-                                        <a href="./video_gallery_page.php" class="child-menu-item">
-                                            <span>Video</span>
-                                        </a>
-
-                                    </div>
-                                </li>
+                              
+                            
 
 
                             </ul>

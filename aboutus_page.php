@@ -2,8 +2,20 @@
 <main class="sec-m-p">
     <section class="about-us article-type-1-cont">
         <div class="article-type-1">
+            <h3 class="section-heading">Who we are</h3>
+            <p>
+                Detective Training School (DTS) is maintained by Criminal Investigation Department (CID) of Bangladesh Police.
+                It arranges various courses in the area of
+                investigation and supervision. Since the inception this institute has produced a good number of highly
+                professional
+                investigating and detective officers. It is headed by a senior police officer in the rank of Additional DIG
+                designated
+                as the Commandant of this school. It was established on 25 July 1962.
+        
+            </p>
+        </div>
+        <div class="article-type-1">
             <h3 class="section-heading">Our History</h3>
-    
                 <p>
                     After the establishment of CID in 1904 AD, its branches were established in every province. The
                     merger of CIB with
@@ -53,16 +65,9 @@
                     Forensic Training Centre was inaugurated in 16 January 2012 and Cyber Training Centre was
                     inaugurated in 23 January
                     2017.
-
-
                 </p>
-
-          
-
         </div>
-
         </div>
     </section>
-
 </main>
 <?php require './footer.php' ?>

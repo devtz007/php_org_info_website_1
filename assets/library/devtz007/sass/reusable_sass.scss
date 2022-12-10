@@ -55,11 +55,16 @@ h3 {
 \*------------------------------------*/
 .article-type-1-cont {
     @include flexC;
-    gap: 105px;
+    gap: 55px;
 
 .article-type-1 {
     @include flexC;
-    gap: 35px;
+    gap: 15px;
+    .article-type-1-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+    }
 
     p {
         font-size: 1.2rem;

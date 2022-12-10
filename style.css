@@ -10,6 +10,10 @@
   font-family: "bungee-regular";
   src: url("./assets/fonts/Bungee-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "prompt";
+  src: url("./assets/fonts/prompt/Prompt-Regular.woff") format("woff");
+}
 /*-------------------------------------------------*\
                  flex library code
 \*-------------------------------------------------*/
@@ -156,6 +160,7 @@ header .logo-wrapper .logo img {
 }
 header .logo-wrapper .info h1 {
   font-family: "bungee-regular";
+  font-family: "prompt";
 }
 header .info {
   font-size: 40px;
@@ -258,6 +263,7 @@ header .info {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .hamburger-menu-wrap .menu ul li a.parent-menu-item:hover,
 .hamburger-menu-wrap .menu ul li a.child-menu-item:hover {
@@ -852,6 +858,33 @@ header .info {
   -o-object-position: center;
   object-position: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/*------------------------------------*\
+            organigram page
+\*------------------------------------*/
+.organigram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.organigram .organigram-image-cont {
+  width: 50vw;
+}
+.organigram .organigram-image-cont img {
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------*\
+            aminities page
+\*------------------------------------*/
+.aminities {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
 }
 
 /*------------------------------------*\

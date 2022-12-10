@@ -1,9 +1,9 @@
 <footer>
     <div class="right-reserve">
-        <p>© 2022 Detective Training School (CID). All rights reserved.</p>
+        <p>© 2022 Detective Training School (DTS). All rights reserved.</p>
     </div>
     <div class="social">
-        <a href="facebook.com">
+        <a href="https://www.facebook.com/dtsbangladesh/">
 
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 408.788 408.788"
