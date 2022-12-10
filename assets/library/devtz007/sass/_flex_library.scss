@@ -1,0 +1,122 @@
+/*-------------------------------------------------*\
+                 flex library code
+\*-------------------------------------------------*/
+//flex library
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+@mixin flex-cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-cen-top {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+@mixin flex-cen-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+//flex row
+@mixin flexR {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-cenR {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-cenR-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flex-cenR-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-cenR-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@mixin flex-cenR-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-cenR-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//flex collumn
+@mixin flexC {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-cenC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-cenC-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flex-cenC-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flexC-left-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@mixin flex-cenC-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}

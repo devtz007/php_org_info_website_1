@@ -1,0 +1,43 @@
+@import './flex_library.scss';
+
+
+
+//set width & height to 100%
+%default-width-height {
+    width: 100%;
+    height: 100%;
+}
+
+//myBtn-cont
+%slogan-contact-a {
+    background-color: var(--btn-bgc);
+    color: var(--btn-color);
+    padding: var(--btn-padY) var(--btn-padX);
+    border-radius: 3px;
+
+}
+
+//heading
+%slogan-h {
+    @include flexC;
+    gap: 10px;
+    font-size: 5rem;
+}
+
+//slider glass effect
+%slider-icon-glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+%gallery-glass-effect {
+    background: rgba(0, 0, 0, 0.603);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}

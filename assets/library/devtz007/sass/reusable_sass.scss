@@ -1,0 +1,211 @@
+@import './_variable_sass.scss';
+@import './_flex_library.scss';
+@import './extend_placeholder';
+@import './_random_library.scss';
+
+/*------------------------------------*\
+           REUSABLE CSS
+\*------------------------------------*/
+/*a tag*/
+a {
+    font-weight: 500;
+transition: 0.3s all ease;
+
+}
+
+/* -----h1 style-----*/
+h1 {
+    font-family: 'hali';
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/*-----p tag-----*/
+p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/*-----h3 tag-----*/
+h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+.sec-m-p {
+    padding: 0 55px;
+}
+
+.section-heading {
+    font-size: 3rem;
+    font-family: "hali";
+    font-weight: 700;
+    color: #251F75;
+
+}
+
+/*section margin*/
+.sec-gap {
+    margin-bottom: 55px;
+}
+
+/*------------------------------------*\
+            article-type-1
+\*------------------------------------*/
+.article-type-1-cont {
+    @include flexC;
+    gap: 105px;
+
+.article-type-1 {
+    @include flexC;
+    gap: 35px;
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgb(0, 0, 0);
+        strong {
+            font-weight: 600;
+        }
+    }
+}
+}
+
+/*------------------------------------*\
+            notice
+\*------------------------------------*/
+
+/*------------------------------------*\
+            table
+\*------------------------------------*/
+.my-table {
+    table {
+        border: 1px solid black;
+        border-right: 0;
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        th {
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: #30c2ff;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+
+        }
+    }
+}
+
+/*-------------------------------------------------*\
+            Pagination 
+\*-------------------------------------------------*/
+.pagination-cont {
+    @include flex-cenR-space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .numbers {
+        @include flexR;
+        gap: 10px;
+
+        button {
+            @include flex-cen;
+            width: 35px;
+            height: 35px;
+            border-radius: 0px;
+            border-bottom: 3px solid transparent;
+            color: $main-color;
+            font-weight: 700;
+
+            span {
+                overflow: hidden;
+            }
+
+            &:hover {
+                border-bottom: 3px solid $main-color;
+                transition: all 1s ease;
+            }
+
+            &:nth-child(1),
+            &:nth-child(9) {
+
+                border-radius: 3px;
+                background-color: $main-color;
+
+            }
+        }
+
+        .svg-cont {
+            @include flex-cen;
+            width: 15px;
+
+            svg {
+                path {
+                    fill: #ffffff;
+                    transition: all 1s ease;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .search {
+        @include input-type-1(50px, $main-color);
+
+        .input-type-1 {
+            input {
+                border: none;
+                border-radius: 0;
+
+                &:nth-child(1) {
+                    border: 1px solid $main-color;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: $notice-bg-color;
+                    font-size: 1rem;
+                }
+            }
+
+            .myBtn-b {
+                @include flex-cenR;
+                padding: 0;
+                gap: 2px;
+                background-color: transparent;
+                color: $main-color;
+                border: none;
+                font-weight: 700;
+                cursor: pointer;
+
+                .svg-cont {
+                    height: 20px;
+
+                    svg {
+                        @extend %default-width-height;
+
+                        path {
+                            fill: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//add active class
+.activeClassPagination {
+    border-bottom: 3px solid $main-color !important;
+}

@@ -1,0 +1,100 @@
+/*-------------------------------------------------*\
+                 flex library code
+\*-------------------------------------------------*/
+/*-------------------------------------------------*\
+                input-type-1
+\*-------------------------------------------------*/
+/*-------------------------------------------------*\
+                input-type-2
+\*-------------------------------------------------*/
+/*-------------------------------------------------*\
+                input-type-submit (submit)
+\*-------------------------------------------------*/
+/*-------------------------------------------------*\
+                        login
+\*-------------------------------------------------*/
+.registration-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.registration-sec .registration-cont {
+  background-color: var(--container-bgc);
+  background-color: var(--login-bgc);
+  padding: 50px;
+  width: 50vw;
+  border-radius: 6px;
+}
+.registration-sec .registration-cont h3 {
+  color: #251F75;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.registration-sec .registration-cont .input-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.registration-sec .registration-cont .input-cont label {
+  color: var(--form-input-label-color);
+}
+.registration-sec .registration-cont .input-cont .input-type-2 {
+  border-radius: 0;
+  padding: 8px 10px;
+  color: var(--form-input-color);
+  font-size: 1rem;
+  width: auto;
+  border: 1px solid #b8b8b8;
+}
+.registration-sec .registration-cont .input-cont .input-type-2 {
+  border-radius: 3px;
+}
+.registration-sec .registration-cont .input-cont .input-type-2::-moz-placeholder {
+  color: var(--form-placeholder-color);
+}
+.registration-sec .registration-cont .input-cont .input-type-2:-ms-input-placeholder {
+  color: var(--form-placeholder-color);
+}
+.registration-sec .registration-cont .input-cont .input-type-2::placeholder {
+  color: var(--form-placeholder-color);
+}
+.registration-sec .registration-cont .input-cont .check-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.registration-sec .registration-cont .input-cont .check-box input[type=checkbox] {
+  margin: 0;
+}
+.registration-sec .registration-cont .input-cont .check-box a {
+  color: var(--color-2);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.registration-sec .registration-cont .input-cont .check-box a:hover {
+  color: #251F75;
+}
+.registration-sec .registration-cont .input-cont .myBtn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-sec .registration-cont .input-cont .myBtn-cont .input-type-submit {
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 666px) {
+  .registration-sec .registration-cont {
+    width: 100vw;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+@media screen and (max-width: 666px) {
+  .registration-sec {
+    padding: 10px 10px;
+  }
+}/*# sourceMappingURL=login.css.map */

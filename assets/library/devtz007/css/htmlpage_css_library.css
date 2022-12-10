@@ -1,0 +1,298 @@
+/*------Safe fonts-------------------------------------*\
+font-family: arial,sans-serif; (google using as default)
+/*------Safe fonts-------------------------------------*/
+/*------------------------------------*\
+            Common Css
+\*------------------------------------*/
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: normal;
+  letter-spacing: 0.3px;
+  word-spacing: 2px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.17rem;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+p {
+  letter-spacing: normal;
+  line-height: 1.5;
+  text-transform: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+table,
+tr,
+td {
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+
+/*-------------------------------------------------*\
+                display library
+\*-------------------------------------------------*/
+.d-none {
+  display: none !important;
+}
+
+/*-------------------------------------------------*\
+                background library
+\*-------------------------------------------------*/
+.bgc-none {
+  background: none;
+}
+.bgc-trans {
+  background-color: transparent;
+}
+
+/*-------------------------------------------------*\
+                width library
+\*-------------------------------------------------*/
+/*max width*/
+.myW-100 {
+  width: 100%;
+}
+/*height*/
+.myH-100 {
+    height: 100%;
+}
+/*width and height*/
+.myWH-100 {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*-------------------------------------------------*\
+                positioning library
+\*-------------------------------------------------*/
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: left;
+}
+
+/*-------------------------------------------------*\
+                button library
+\*-------------------------------------------------*/
+.myBtn-cont {
+  display: flex;
+}
+.myBtn-a,
+.myBtn-b {
+  color: #251f75;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  line-height: 1.5;
+  align-self: center;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 0;
+  font-weight: 700;
+}
+
+.myBtn-a {
+  display: block;
+  font-weight: 400;
+  background-color: transparent;
+  font-size: 1rem;
+  /*border-radius: 0.25rem;*/
+}
+.myBtn-a:hover {
+  color: #ffffff;
+  background-color: #251f75;
+}
+.myBtn-b {
+  padding: 15px 25px;
+}
+
+.myBtn-b:hover {
+  color: #ffffff;
+  background-color: #251f75;
+}
+/*-------------------------------------------------*\
+                gap library
+\*-------------------------------------------------*/
+.gap-1 {
+  gap: 16px;
+}
+
+.gap-05 {
+  gap: 8px;
+}
+
+/*-------------------------------------------------*\
+                padding library
+\*-------------------------------------------------*/
+.myP-1 {
+  padding: 16px;
+}
+
+.myP-y-1 {
+  padding: 0 16px;
+}
+
+.myP-x-1 {
+  padding: 16px 0;
+}
+
+.myP-t-1 {
+  padding-top: 16px;
+}
+
+.myP-r-1 {
+  padding-right: 16px;
+}
+
+.myP-b-1 {
+  padding-bottom: 16px;
+}
+
+.myP-l-1 {
+  padding-left: 16px;
+}
+
+
+
+/*-------------------------------------------------*\
+                border library
+\*-------------------------------------------------*/
+.b-1 {
+  border: 1px solid var(--border-color);
+}
+
+.bt-1 {
+  border-top: 1px solid var(--border-color);
+}
+
+.br-1 {
+  border-right: 1px solid var(--border-color);
+}
+
+.bb-1 {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bl-1 {
+  border-left: 1px solid var(--border-color);
+}
+
+.b-r-6 {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.b-r-3 {
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+/*-------------------------------------------------*\
+                scroll bar library
+\*-------------------------------------------------*/
+/* Track */
+no::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Sets the dimensions of the entire scrollbar */
+no::-webkit-scrollbar {
+  width: 30px;
+  height: 30px;
+}
+
+/* The grabbable scrollbar button  */
+no::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff8a00),
+    to(#e52e71)
+  );
+  background: linear-gradient(180deg, #ff8a00, #e52e71);
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* The vertical scrollbar background */
+no::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #201c29, #201c29 1px, #100e17 0, #100e17);
+}
+
+.link-col-bgc-black {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.link-col-bgc-trans {
+  background-color: transparent;
+}
+
+/* -----High light -----*/
+.highlight {
+  color: var(--highlight-color);
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*\
+           Contact: tazin.me
+\*++++++++++++++++++++++++++++++++++++*/
