@@ -1,5 +1,6 @@
 <footer>
-    <div class="right-reserve">
+    <div class="footer-cont">
+            <div class="right-reserve">
         <p>© 2022 Detective Training School (DTS). All rights reserved.</p>
     </div>
     <div class="social">
@@ -84,6 +85,9 @@
             </svg>
         </a>
     </div>
+
+    </div>
+
 </footer>
 <script src="./scripts.js"></script>
 </body>

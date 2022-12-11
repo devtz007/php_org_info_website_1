@@ -20,8 +20,8 @@
 /*-------------------------------------------------*\
                  flex library code
 \*-------------------------------------------------*/
-footer .social img, .news-event-notice .myBtn-cont .myBtn-a, .slider-sec .slider-wrapper .left-arrow svg,
-.slider-sec .slider-wrapper .right-arrow svg, .hamburger-menu-wrap .menu ul .home svg, .hamburger-menu-wrap .menu ul .home a.home-item, header .logo-wrapper .logo img, header .upper-header .social a svg {
+footer .footer-cont .social img, .news-event-notice .myBtn-cont .myBtn-a, .slider-sec .slider-wrapper .left-arrow svg,
+.slider-sec .slider-wrapper .right-arrow svg, .hamburger-menu-wrap .menu ul .home a.home-item svg, .hamburger-menu-wrap .menu ul .home a.home-item, header .upper-header .website-logo img {
   width: 100%;
   height: 100%;
 }
@@ -97,11 +97,22 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  gap: 55px;
-  position: relative;
-  font-family: "poli";
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 0;
+  font-family: "poli";
+}
+
+main,
+header,
+footer {
+  background-color: #f5f5f5;
+  width: 85vw;
+}
+
+main {
+  padding: 55px 0;
 }
 
 /*-------------------------*\
@@ -111,56 +122,52 @@ header {
   display: flex;
   flex-direction: column;
   z-index: 10;
+  background: #251F75;
+  background: linear-gradient(90deg, #251F75 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
 }
 header .upper-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  padding: 5px 55px;
+  padding: 15px 25px;
 }
-header .upper-header .social {
+header .upper-header .website-logo {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: column;
+  gap: 25px;
+  width: 125px;
+  height: auto;
 }
-header .upper-header .social a {
-  height: 18px;
-  display: block;
-}
-header .upper-header .social span {
+header .upper-header .website-name {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-header .upper-header .social span a {
-  padding: 0 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-header .upper-header .social span a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-header .logo-wrapper {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
-  padding: 15px 0;
+  gap: 5px;
 }
-header .logo-wrapper .logo {
-  width: auto;
-  height: 105px;
-}
-header .logo-wrapper .logo img {
-  width: auto;
-}
-header .logo-wrapper .info h1 {
-  font-family: "bungee-regular";
+header .upper-header .website-name div {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
   font-family: "prompt";
+  line-height: 2rem;
+}
+header .upper-header .contact {
+  color: #ffffff;
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+header .upper-header .contact .contact-heading {
+  font-size: 1.2rem;
+}
+header .upper-header .contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
 }
 header .info {
   font-size: 40px;
@@ -184,7 +191,6 @@ header .info {
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
 .hamburger-button .toggler {
   position: absolute;
@@ -238,6 +244,7 @@ header .info {
 
   top: 0;
   left: 100%;*/
+  background: none;
 }
 .hamburger-menu-wrap .menu {
   visibility: visible;
@@ -259,7 +266,7 @@ header .info {
   align-items: center;
   height: 48px;
   padding: 0 25px;
-  color: #251F75;
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -280,13 +287,12 @@ header .info {
   position: absolute;
   top: 100%;
   left: 0px;
-  background-color: #251F75;
+  background-color: #ffffff;
   min-width: 100%;
   z-index: 50;
   border: 1px solid #251F75;
 }
 .hamburger-menu-wrap .menu ul li .child-menu-cont a.child-menu-item {
-  background-color: #ffffff;
   color: #251F75;
   border-top: 1px solid #251F75;
 }
@@ -295,6 +301,7 @@ header .info {
 }
 .hamburger-menu-wrap .menu ul li .child-menu-cont a.child-menu-item:hover {
   background-color: #251F75;
+  background: linear-gradient(90deg, #251F75 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
   color: #ffffff;
 }
 .hamburger-menu-wrap .menu ul li:hover > .child-menu-cont {
@@ -312,14 +319,14 @@ header .info {
 .hamburger-menu-wrap .menu ul .home a.home-item div {
   height: 30px;
 }
+.hamburger-menu-wrap .menu ul .home a.home-item svg {
+  fill: #ffffff;
+}
 .hamburger-menu-wrap .menu ul .home a.home-item:hover {
   background-color: #251F75;
 }
 .hamburger-menu-wrap .menu ul .home a.home-item:hover svg {
   fill: #ffffff;
-}
-.hamburger-menu-wrap .menu ul .home svg {
-  fill: #251F75;
 }
 .hamburger-menu-wrap .menu > div {
   display: flex;
@@ -396,6 +403,8 @@ header .info {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 .slider-sec .slider-wrapper .left-arrow,
 .slider-sec .slider-wrapper .right-arrow {
@@ -444,8 +453,8 @@ header .info {
 .slider-sec .commandant-wrapper .image-cont img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .slider-sec .commandant-wrapper .image-cont .info {
   position: absolute;
@@ -512,12 +521,8 @@ header .info {
   padding: 10px 15px;
   border-bottom: 1px solid rgba(37, 31, 117, 0.2);
 }
-.news-event-notice .myBtn-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .news-event-notice .myBtn-cont .myBtn-a {
+  padding: 10px 0;
   color: #251F75;
   border-radius: 0;
   font-weight: 600;
@@ -545,7 +550,6 @@ header .info {
 }
 .objectives .items-cont .item .image {
   position: relative;
-  background-color: coral;
   height: 255px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -698,7 +702,8 @@ header .info {
 .notice-board .notice-item a:hover {
   color: rgb(0, 0, 0);
 }
-.notice-board .notice-item .notice-date, .notice-board .notice-item .notice-heading {
+.notice-board .notice-item .notice-date,
+.notice-board .notice-item .notice-heading {
   padding: 15px;
 }
 .notice-board .notice-item .notice-image-cont {
@@ -890,23 +895,22 @@ header .info {
 /*------------------------------------*\
             footer
 \*------------------------------------*/
-footer {
+footer .footer-cont {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #251F75;
-  margin-top: 55px;
   padding: 25px 55px;
   z-index: -100;
 }
-footer .social {
+footer .footer-cont .social {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 15px;
 }
-footer .social a {
+footer .footer-cont .social a {
   width: 25px;
   height: 25px;
 }/*# sourceMappingURL=style.css.map */

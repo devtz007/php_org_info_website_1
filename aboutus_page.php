@@ -1,6 +1,6 @@
 <?php require './header.php' ?>
-<main class="sec-m-p">
-    <section class="about-us article-type-1-cont">
+<main>
+    <section class="about-us article-type-1-cont sec-x-p">
         <div class="article-type-1">
             <h3 class="section-heading">Who we are</h3>
             <p>

@@ -3,9 +3,24 @@
    
 <div class="make-col-2">
     <div class="col-1">
-        <section class="all-program article-type-1-cont">
+
+        <section class="all-program article-type-1-cont sec-x-p">
+            <div class="section-heading">
+                Program
+            </div>
+            <div class="article-type-1 aaa">
+                <div>
+                    <p>
+                        Detective training school is an umbrella organization composed of three different training organization
+                        under the
+                        overall supervision of CID headquarter with their respective missions and objectives
+                    </p>
+                </div>
+            
+            
+            </div>
             <div class="article-type-1 dts">
-                <h3 class="section-heading">Detective Training School</h3>
+                <h3 class="article-type-1-heading">Detective Training School</h3>
                 <div>
                     <p>
                         1. To create highly trained and efficient police officers who can uphold the rule of law, prevent
@@ -89,7 +104,7 @@
         
             </div>
             <div class="article-type-1 ftc">
-                <h3 class="section-heading">Forensic Training Centre</h3>
+                <h3 class="article-type-1-heading">Forensic Training Centre</h3>
                 <div>
                     <p>
                         1. To provide quality techniques and tactics for tech-led investigation.
@@ -172,7 +187,7 @@
                 </div>
             </div>
             <div class="article-type-1 dts">
-                <h3 class="section-heading">Cyber Training Centre</h3>
+                <h3 class="article-type-1-heading">Cyber Training Centre</h3>
                 <div>
                     <p>
                         1. To create a pool of highly trained & efficient police officers to combat cyber crime effectively

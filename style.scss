@@ -74,71 +74,71 @@ html {
 }
 
 body {
-  @include flexC;
-  gap: 55px;
-  position: relative;
-  font-family: "poli";
+  @include flex-cenC;
   position: relative;
   z-index: 0;
+  font-family: "poli";
 }
-
+main,
+header,
+footer {
+  background-color: #f5f5f5;
+  width: 85vw;
+}
+main {
+  padding: 55px 0;
+}
 /*-------------------------*\
     header
 \*-------------------------*/
 header {
   @include flexC;
-   z-index: 10;
+  z-index: 10;
+    background: $main-color;
+    background: linear-gradient(
+      90deg,
+      $main-color 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+
   .upper-header {
     @include flex-cenR-space-between;
-    background-color: black;
-    padding: 5px 55px;
 
-    .social {
-      @include flexR;
-      gap: 15px;
-
-      a {
-        height: 18px;
-        display: block;
-
-        svg {
-          @extend %default-width-height;
-        }
-      }
-      span {
-        @include flexR;
-        a {
-          padding: 0 15px;
-          font-size: 0.8rem;
-          font-weight: 600;
-          &:hover {
-            color: rgba(255, 255, 255, 0.5);
-          }
-        }
-      }
-    }
-  }
-
-  .logo-wrapper {
-    @include flex-cenR;
-    gap: 25px;
-    padding: 15px 0;
-
-    .logo {
-      width: auto;
-      height: 105px;
+    padding: 15px 25px;
+    .website-logo {
+      @include flexC;
+      gap: 25px;
+      width: 125px;
+      height: auto;
 
       img {
         @extend %default-width-height;
-        width: auto;
       }
     }
-
-    .info {
-      h1 {
-        font-family: "bungee-regular";
+    .website-name {
+      @include flex-cenC;
+      gap: 5px;
+      div {
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: 700;
         font-family: "prompt";
-        
+        line-height: 2rem;
+      }
+    }
+    .contact {
+      color: #ffffff;
+      font-weight: 600;
+      gap: 10px;
+      @include flexC;
+      .contact-heading {
+        font-size: 1.2rem;
+      }
+      .contact-info {
+        @include flexC;
+        gap: 5px;
+        font-size: 0.8rem;
       }
     }
   }
@@ -154,6 +154,7 @@ header {
   width: 100%;
   height: 100%;
   border: 1px solid $main-color;
+
 }
 
 //hamburger button
@@ -167,8 +168,6 @@ header {
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
-
   .toggler {
     position: absolute;
     top: 50%;
@@ -234,6 +233,7 @@ header {
   top: 0;
   left: 100%;*/
   //visibility: hidden;
+  background: none;
 
   .menu {
     visibility: visible;
@@ -241,20 +241,25 @@ header {
     ul {
       @include flex-cenR;
 
+
       li {
         position: relative;
         z-index: 50;
+
+
+
         a.parent-menu-item,
         a.child-menu-item {
           @include flex-cen;
           height: 48px;
           padding: 0 25px;
-          color: $main-color;
+          color: #ffffff;
           font-size: 0.9rem;
           font-weight: 600;
           text-transform: uppercase;
           white-space: nowrap;
-          
+ 
+    
 
           &:hover {
             background-color: $main-color;
@@ -262,28 +267,39 @@ header {
             transition: 0.3s all ease;
           }
         }
+
         .parent-menu-item {
           border-right: 1px solid $main-color;
           border-left: 0px solid $main-color;
         }
+
         .child-menu-cont {
           display: none;
           position: absolute;
           top: 100%;
           left: 0px;
-          background-color: $hamburger-menu-bg-color;
+          background-color: #ffffff;
+
           min-width: 100%;
           z-index: 50;
           border: 1px solid $main-color;
+
           a.child-menu-item {
-            background-color: #ffffff;
+
             color: $main-color;
             border-top: 1px solid $main-color;
             &:nth-child(1) {
               border-top: none;
             }
+
             &:hover {
               background-color: $main-color;
+                  background: linear-gradient(
+      90deg,
+      $main-color 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
               color: #ffffff;
             }
           }
@@ -305,18 +321,18 @@ header {
           div {
             height: 30px;
           }
+          svg {
+            @extend %default-width-height;
 
+            fill: #ffffff;
+          }
           &:hover {
             background-color: $main-color;
+
             svg {
               fill: #ffffff;
             }
           }
-        }
-        svg {
-          @extend %default-width-height;
-
-          fill: $hamburger-menu-color;
         }
       }
     }
@@ -330,11 +346,13 @@ header {
     color: #fff;
     transform: scale(1);
     transition-duration: 1s;
+
   }
 
   .menu > div > div {
     opacity: 1;
     transition: opacity 1s ease;
+
   }
 }
 
@@ -379,6 +397,7 @@ header {
   margin-bottom: 55px;
   gap: 5px;
   width: 100%;
+
   .slider-wrapper {
     position: relative;
     //background-color: #30c2ff;
@@ -402,8 +421,10 @@ header {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
       }
     }
+
     .left-arrow,
     .right-arrow {
       @extend %slider-icon-glass-effect;
@@ -413,6 +434,7 @@ header {
       top: 50%;
       border-radius: 3px;
       padding: 10px;
+
       svg {
         height: 30px;
         @extend %default-width-height;
@@ -452,11 +474,13 @@ header {
     .image-cont {
       position: relative;
       height: 350px;
+
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
+
       .info {
         position: absolute;
         bottom: 0;
@@ -469,9 +493,11 @@ header {
     }
   }
 }
+
 .indicatorActive {
   background: rgba(37, 31, 117, 0.25) !important;
 }
+
 /*------------------------------------*\
           make  column
 \*------------------------------------*/
@@ -507,13 +533,16 @@ header {
     padding: 15px 0;
     background-color: $list-heading-bg-color;
   }
+
   h3 {
     font-size: 1.2rem;
     font-weight: 700;
     font-family: "hali";
   }
+
   .list {
     @include flexC;
+
     p {
       font-size: 0.9rem;
       font-weight: 500;
@@ -522,10 +551,13 @@ header {
       border-bottom: 1px solid rgba(37, 31, 117, 0.2);
     }
   }
+
   .myBtn-cont {
-    @include flex-cen;
+
+
     .myBtn-a {
       @extend %default-width-height;
+      padding: 10px 0;
       color: $main-color;
       border-radius: 0;
       font-weight: 600;
@@ -559,7 +591,6 @@ header {
     .item {
       .image {
         position: relative;
-        background-color: coral;
         height: 255px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -688,6 +719,7 @@ header {
     }
   }
 }
+
 /*-------------------------------------------------*\
             program page
 \*-------------------------------------------------*/
@@ -715,39 +747,43 @@ header {
       @include flexC;
       //gap: 15px;
       color: rgb(0, 0, 0);
-   
+
       &:hover {
         color: rgb(0, 0, 0);
       }
     }
-.notice-date, .notice-heading {
+
+    .notice-date,
+    .notice-heading {
       padding: 15px;
-}
+    }
+
     .notice-image-cont {
       background-color: #3a73bf;
       height: 225px;
       width: 100%;
+
       img {
         width: 100%;
         height: 100%;
-              object-fit: cover;
-                overflow: hidden;
-
+        object-fit: cover;
+        overflow: hidden;
       }
     }
+
     .notice-date {
-            font-size: .8rem;
-              font-weight: 600;
-              color: rgba(0, 0, 0, 0.397);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.397);
     }
+
     .notice-heading {
       font-size: 1.2rem;
       font-weight: 600;
       color: rgb(0, 0, 0);
-        padding: 15px;
-        padding-top: 0px;
+      padding: 15px;
+      padding-top: 0px;
     }
-
   }
 }
 
@@ -769,6 +805,7 @@ header {
   grid-auto-rows: 150px;
   grid-gap: 10px;
   grid-auto-flow: dense;
+
   .photo-gallary-mosaic-child {
     overflow: hidden;
     position: relative;
@@ -794,6 +831,7 @@ header {
       transition: -webkit-transform 0.5s;
       transition: transform 0.5s;
       transition: transform 0.5s, -webkit-transform 0.5s;
+
       &:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
@@ -814,6 +852,7 @@ header {
       font-weight: 600;
       background-color: #3a73bf;
     }
+
     //image placement
     &:nth-child(1) {
       grid-column-start: span 2;
@@ -831,9 +870,11 @@ header {
     &:nth-child(7) {
       grid-column-start: span 2;
     }
+
     //image placement ends
   }
 }
+
 .gallery-full-image-show-active {
   //@extend %gallery-glass-effect;
   background-color: black;
@@ -849,12 +890,14 @@ header {
 
   img {
     object-fit: contain !important;
+
     &:hover {
       -webkit-transform: scale(1) !important;
       transform: scale(1) !important;
     }
   }
 }
+
 .photo-gallary-child-close-active {
   //visibility: visible;
   display: block;
@@ -869,12 +912,14 @@ header {
   font-weight: 600;
   background-color: #3a73bf;
 }
+
 /*------------------------------------*\
             video gallery page
 \*------------------------------------*/
 .video-gallery {
   @include flexC;
   gap: 35px;
+
   .video-items-container {
     background: #f5f5f5;
     width: 100%;
@@ -885,6 +930,7 @@ header {
     grid-auto-rows: 250px;
     grid-gap: 10px;
     grid-auto-flow: dense;
+
     iframe {
       width: 100%;
       height: 100%;
@@ -900,20 +946,24 @@ header {
     }
   }
 }
+
 /*------------------------------------*\
             organigram page
 \*------------------------------------*/
 .organigram {
   @include flex-cenC;
   gap: 35px;
+
   .organigram-image-cont {
     width: 50vw;
+
     img {
       width: 100%;
       height: 100%;
     }
   }
 }
+
 /*------------------------------------*\
             aminities page
 \*------------------------------------*/
@@ -921,24 +971,30 @@ header {
   @include flexC;
   gap: 55px;
 }
+
 /*------------------------------------*\
             footer
 \*------------------------------------*/
+
 footer {
-  @include flex-cenR-space-between;
-  background-color: $main-color;
-  margin-top: 55px;
-  padding: 25px 55px;
-  z-index: -100;
-  .social {
-    @include flexR;
-    gap: 15px;
-    a {
-      width: 25px;
-      height: 25px;
-    }
-    img {
-      @extend %default-width-height;
+  .footer-cont {
+    @include flex-cenR-space-between;
+    background-color: $main-color;
+    padding: 25px 55px;
+    z-index: -100;
+
+    .social {
+      @include flexR;
+      gap: 15px;
+
+      a {
+        width: 25px;
+        height: 25px;
+      }
+
+      img {
+        @extend %default-width-height;
+      }
     }
   }
 }

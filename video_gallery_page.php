@@ -1,10 +1,9 @@
 <?php require './header.php' ?>
-<main class="sec-m-p">
-    <section class="video-gallery">
+<main>
+    <section class="video-gallery sec-x-p">
         <div class="Video-gallery-heading section-heading">
             Video gallery
         </div>
-       
        <div class="video-items-container">
             <div class="video-item">
                 <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
@@ -37,8 +36,8 @@
                 <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"></iframe>
             </div>
 
-        </div>
-                <div class="pagination-cont">
+       </div>
+       <div class="pagination-cont">
                     <div class="numbers">
                         <button class="pagination-number pagination-arrow" href="">
                             <span class="svg-cont" style="transform: rotate(180deg);">
@@ -106,7 +105,7 @@
                             </button>
                         </div>
                     </div>
-                </div>
+       </div>
     </section>
 </main>
 <?php require './footer.php' ?>

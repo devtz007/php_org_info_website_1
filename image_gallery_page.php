@@ -1,53 +1,45 @@
 <?php require './header.php' ?>
-<main class="sec-m-p">
+<main>
 
-    <section class="photo-gallary sec6">
+    <section class="photo-gallary sec-x-p">
         <div class="photo-gallary-header section-heading">Photo Gallary</div>
         <div>
             <div class="photo-gallary-mosaic-image-conatainer ">
                 <div id="img1 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img1.jpg " alt="">
+                    <img src="./assets/components/photo_gallery_comp/img1.jpeg " alt="">
                     <button class="photo-gallary-child-close">X</button>
                 </div>
                 <div id="img2 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img2.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img2.jpeg " alt=" ">
                                         <div class="photo-gallary-child-close">
                                             X
                                         </div>
                 </div>
                 <div id="img3 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img3.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img3.jpeg " alt=" ">
                 </div>
                 <div id="img4 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img4.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img4.jpeg " alt=" ">
                 </div>
                 <div id="img5 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img5.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img5.jpeg " alt=" ">
                 </div>
                 <div id="img6 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img6.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img6.jpeg " alt=" ">
                 </div>
                 <div id="img7 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img7.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img7.jpeg " alt=" ">
                 </div>
                 <div id="img8 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img8.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img8.jpeg " alt=" ">
                 </div>
                 <div id="img9 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img9.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img9.jpeg " alt=" ">
                 </div>
                 <div id="img7 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img10.jpg " alt=" ">
+                    <img src="./assets/components/photo_gallery_comp/img10.jpeg " alt=" ">
                 </div>
-                <div id="img8 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img11.jpg " alt="">
-                        <a data-lg-size="1280-720"
-                            data-video='{"source": [{"src":"/videos/video1.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
-                            data-poster="/images/demo/youtube-video-poster.jpg"
-                            data-sub-html="<h4>'Peck Pocketed' by Kevin Herron | Disney Favorite</h4>">
-                            <img width="300" height="100" class="img-responsive" src="/images/demo/youtube-video-poster.jpg" />
-                        </a>
-                </div>
+ 
 
             </div>
 

@@ -1,7 +1,7 @@
 <?php require './header.php' ?>
-<main class="sec-m-p">
-    <section class="aminities">
-        <div class="section-heading">Aminities</div>
+<main>
+    <section class="aminities sec-x-p">
+        <div class="section-heading">Amenities</div>
         <div class="aminities-item-cont article-type-1-cont">
             <div class="aminities-item article-type-1">
                 <h3 class="article-type-1-heading">New DTS Building</h3>
