@@ -1,6 +1,9 @@
-<?php require './header.php' ?>
-<main>
-    <section class="about-us article-type-1-cont sec-x-p">
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<main class="main-p-top main-p-bot">
+    <section class="about-us article-type-1-cont sec-gap sec-x-p">
         <div class="article-type-1">
             <h3 class="section-heading">Who we are</h3>
             <p>
@@ -70,4 +73,8 @@
         </div>
     </section>
 </main>
-<?php require './footer.php' ?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>

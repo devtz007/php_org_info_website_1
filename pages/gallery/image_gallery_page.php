@@ -1,43 +1,46 @@
-<?php require './header.php' ?>
-<main>
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<main class="main-p-top main-p-bot">
 
-    <section class="photo-gallary sec-x-p">
+    <section class="photo-gallary sec-gap sec-x-p">
         <div class="photo-gallary-header section-heading">Photo Gallary</div>
         <div>
             <div class="photo-gallary-mosaic-image-conatainer ">
                 <div id="img1 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img1.jpeg " alt="">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img1.jpeg " alt="">
                     <button class="photo-gallary-child-close">X</button>
                 </div>
                 <div id="img2 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img2.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img2.jpeg " alt=" ">
                                         <div class="photo-gallary-child-close">
                                             X
                                         </div>
                 </div>
                 <div id="img3 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img3.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img3.jpeg " alt=" ">
                 </div>
                 <div id="img4 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img4.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img4.jpeg " alt=" ">
                 </div>
                 <div id="img5 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img5.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img5.jpeg " alt=" ">
                 </div>
                 <div id="img6 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img6.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img6.jpeg " alt=" ">
                 </div>
                 <div id="img7 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img7.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img7.jpeg " alt=" ">
                 </div>
                 <div id="img8 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img8.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img8.jpeg " alt=" ">
                 </div>
                 <div id="img9 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img9.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img9.jpeg " alt=" ">
                 </div>
                 <div id="img7 " class="photo-gallary-mosaic-child ">
-                    <img src="./assets/components/photo_gallery_comp/img10.jpeg " alt=" ">
+                    <img src="<?php $rootPath?>/assets/components/photo_gallery_comp/img10.jpeg " alt=" ">
                 </div>
  
 
@@ -122,7 +125,7 @@
     </section>
 
 </main>
-<script src="./scripts.js"></script>
+<script src="<?php $rootPath?>/scripts.js"></script>
 <script>
     //gallery image
     const galleryImg = document.querySelectorAll('div.photo-gallary-mosaic-child img');
@@ -141,4 +144,6 @@
         });
     }
 </script>
-<?php require './footer.php' ?>
+<?php
+ require "$rootPath/footer.php";
+?>

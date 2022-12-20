@@ -1,10 +1,13 @@
-<?php require './header.php' ?>
-<main class="sec-m-p">
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<main class="main-p-top main-p-bot">
    
 <div class="make-col-2">
     <div class="col-1">
 
-        <section class="all-program article-type-1-cont sec-x-p">
+        <section class="all-program article-type-1-cont sec-gap sec-x-p">
             <div class="section-heading">
                 Program
             </div>
@@ -229,9 +232,13 @@
 
     </div>
     <div class="col-2">
-                <?php include './notice_comp.php' ?>
-                <?php include './news_event_comp.php' ?>
+    <?php require "$rootPath/assets/components/notice_board_comp/notice_comp.php"?>
+    <?php require "$rootPath/assets/components/news_events_comp/news_event_comp.php"?>
     </div>
 </div>
 </main>
-<?php require './footer.php' ?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>

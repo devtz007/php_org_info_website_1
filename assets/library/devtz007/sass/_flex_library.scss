@@ -117,6 +117,6 @@
 @mixin flex-cenC-space-between {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,27 +1,30 @@
-<?php require './header.php'?>
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
 <main>
   <section class="slider-sec">
     <div class="slider-wrapper">
       <div class="images-cont">
         <img
           class="slider-img"
-          src="./assets/components/slider/images/a1.jpeg"
+          src="<?php $rootPath?>/assets/components/slider/images/a1.jpeg"
         />
         <img
           class="slider-img"
-          src="./assets/components/slider/images/a2.jpeg"
+          src="<?php $rootPath?>/assets/components/slider/images/a2.jpeg"
         />
         <img
           class="slider-img"
-          src="./assets/components/slider/images/a3.jpeg"
+          src="<?php $rootPath?>/assets/components/slider/images/a3.jpeg"
         />
         <img
           class="slider-img"
-          src="./assets/components/slider/images/a4.jpeg"
+          src="<?php $rootPath?>/assets/components/slider/images/a4.jpeg"
         />
         <img
           class="slider-img"
-          src="./assets/components/slider/images/a5.jpeg"
+          src="<?php $rootPath?>/assets/components/slider/images/a5.jpeg"
         />
       </div>
       <!-- <button class="left-arrow">
@@ -59,7 +62,7 @@
     <div class="commandant-wrapper">
       <div class="image-cont">
         <img
-          src="./assets/components/slider/images/dummy.webp"
+          src="<?php $rootPath?>/assets/components/slider/images/dummy.webp"
           alt="commandant officer's picture"
         />
         <div class="info">
@@ -114,7 +117,7 @@
           <h3 class="section-heading">Our Vision</h3>
           <p>
             Embrace modern and scientific methods to attain excellence in
-            criminal investigation
+            criminal investigation.
           </p>
         </div>
       </section>
@@ -126,22 +129,23 @@
             in criminal justice system by:
             <br />
 
-            Upholding quality investigation stemming unnecessary delay
+            Upholding quality investigation stemming unnecessary delay.
             <br />
-            Combating cyber and organized crime
+            Combating cyber and organized crime.
             <br />
-            Utilizing forensic evidence
+            Utilizing forensic evidence.
             <br />
-            Ensuring capacity building and
+            Ensuring capacity building and.
             <br />
-            Promoting inter-agency cooperation
+            Promoting inter-agency cooperation.
           </p>
         </div>
       </section>
     </div>
     <div class="col-2">
-      <?php include './notice_comp.php'?>
-      <?php include './news_event_comp.php'?>
+      <?php require "$rootPath/assets/components/notice_board_comp/notice_comp.php"?>
+            <?php require "$rootPath/assets/components/news_events_comp/news_event_comp.php"?>
+
     </div>
   </div>
 </main>
@@ -155,7 +159,6 @@
   const rightArrow = document.getElementsByClassName("right-arrow");
   const indicator = document.getElementsByClassName("indicator");
   const indicatorActive = document.getElementsByClassName("indicatorActive");
-  console.log(indicator);
 
   //arranging the image from left to right
   let n = 0;
@@ -181,28 +184,9 @@
         x = -1;
       }
     }
-    /*   if (x < 6) {
-                      x--;
-                      sliderImgCont.style.right = x * 100 + '%';
-                      if (x == 0) {
-                          x = 5;
-                      }
-                  }*/
-    /*if (x > 0) {
-                    rightArrow.style.display = "block";
-                }
-                if (x > 1) {
-                    leftArrow.style.display = "none";
-                }
-                if (x < 2) {
-                    leftArrow.style.display = "block";
-                }
-                if (x == 0) {
-                    rightArrow.style.display = "none";
-                }*/
   }
-  /*end of time function*/
 
+  //change image on click
   for (let i = 0; i < indicator.length; i++) {
     indicator[i].addEventListener("click", () => {
       clearInterval(schoolSlider);
@@ -214,18 +198,9 @@
     });
   }
 
-  /*rightArrow[0].addEventListener("click", function () {
-                clearInterval(schoolSlider);
-                if (x >= -1) {
-                    x--;
-                    carouselInner.style.right = x * 100 + '%';
-                }
-                if (x < 2) {
-                    leftBtn.style.display = "block";
-                }
-                if (x < 1) {
-                    rightBtn.style.display = "none";
-                }
-            });*/
 </script>
-<?php require './footer.php'?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>

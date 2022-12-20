@@ -1,5 +1,7 @@
-/temp.txt
-/.vscode
-/.github
-/.firebaserc
-/.php_tmp
+temp.txt
+.gitignore
+.vscode
+.github
+.firebaserc
+.php_tmp
+.firebase

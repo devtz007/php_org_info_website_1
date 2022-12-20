@@ -113,6 +113,22 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
 }
+@media screen and (max-width: 580px) {
+  .my-table table th,
+.my-table table td {
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .my-table table th {
+    white-space: normal;
+  }
+  .my-table table th {
+    background-color: #30c2ff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
 
 /*-------------------------------------------------*\
             Pagination 

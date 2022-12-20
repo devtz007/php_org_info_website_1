@@ -1,6 +1,9 @@
-<?php require './header.php' ?>
-<main>
-    <section class="video-gallery sec-x-p">
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<main class="main-p-top main-p-bot">
+    <section class="video-gallery sec-gap sec-x-p">
         <div class="Video-gallery-heading section-heading">
             Video gallery
         </div>
@@ -108,4 +111,8 @@
        </div>
     </section>
 </main>
-<?php require './footer.php' ?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>

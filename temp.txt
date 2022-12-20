@@ -1,6 +1,19 @@
-<?php require './header.php' ?>
-<main class="sec-m-p">
+<?php 
+  $rootPath =  $_SERVER['DOCUMENT_ROOT'] . "/" . dirname(__FILE__);
+require '$rootPath/header.php' ?>
+<main class="main-p-top main-p-bo">
 
 
 </main>
-<?php require './footer.php' ?>
+
+
+
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>

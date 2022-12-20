@@ -1,12 +1,15 @@
-<?php require './header.php' ?>
-<main class="sec-m-p">
-    <section class="notice-board">
+<?php
+ $rootPath =  $_SERVER['DOCUMENT_ROOT'];
+ require "$rootPath/header.php";
+?>
+<main class="main-p-bot main-p-top">
+    <section class="notice-board sec-gap sec-x-p">
         <div class="section-heading">News and Events</div>
         <div class="notice-list-cont">
             <div class="notice-item">
-                <a href="./read_notice_page.php">
+                <a href="<?php $rootPath?>/pages/news_events_page/read_news_events_page.php">
                     <div class="notice-image-cont">
-                        <img src="./assets/components/news_events_comp/images/n.jpg" alt="">
+                        <img src="<?php $rootPath?>/assets/components/news_events_comp/images/n.jpg" alt="">
                     </div>
 
                     <div class="notice-date">12.12.2022</div>
@@ -20,32 +23,7 @@
                 </a>
 
             </div>
-            <div class="notice-item">
-                <a href="./read_notice_page.php">
-                    <div class="notice-date">12.12.2022</div>
 
-                    <h3 class="notice-heading">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, autem. Corporis ullam nostrum
-                        libero corrupti nihil
-                        est. Hic nihil laudantium voluptatem architecto maiores earum? Possimus.
-                    </h3>
-
-                </a>
-
-            </div>
-            <div class="notice-item">
-                <a href="./read_notice_page.php">
-                    <div class="notice-date">12.12.2022</div>
-
-                    <h3 class="notice-heading">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, autem. Corporis ullam nostrum
-                        libero corrupti nihil
-                        est. Hic nihil laudantium voluptatem architecto maiores earum? Possimus.
-                    </h3>
-
-                </a>
-
-            </div>
         </div>
         <div class="pagination-cont">
             <div class="numbers">
@@ -120,4 +98,8 @@
         </div>
     </section>
 </main>
-<?php require './footer.php' ?>
+<?php
+
+ require "$rootPath/footer.php";
+
+ ?>
