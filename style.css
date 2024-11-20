@@ -123,7 +123,7 @@ footer {
     width: 95%;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 670px) {
   main,
   header,
   footer {
@@ -456,12 +456,16 @@ header .info {
   flex-wrap: wrap;
   gap: 10px;
   width: 100%;
-  height: 300px;
+}
+@media screen and (max-width: 670px) {
+  .slider-sec {
+    gap: 0px;
+  }
 }
 .slider-sec .slider-wrapper {
   position: relative;
   flex: 3 1;
-  height: 100%;
+  height: 300px;
   overflow: hidden;
 }
 .slider-sec .slider-wrapper .images-cont {
@@ -527,20 +531,28 @@ header .info {
   flex-direction: column;
   align-items: flex-start;
   flex: 1 1;
-  width: 100%;
-  height: 100%;
+  height: 300px;
 }
 .slider-sec .commandant-wrapper .image-cont {
   position: relative;
+  width: 100%;
   height: 100%;
 }
 .slider-sec .commandant-wrapper .image-cont img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+@media screen and (max-width: 660px) {
+  .slider-sec .commandant-wrapper .image-cont img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+  }
 }
 .slider-sec .commandant-wrapper .image-cont .info {
   position: absolute;
